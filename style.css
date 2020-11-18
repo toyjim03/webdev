@@ -1,0 +1,248 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+header{
+  background-color: rgba(241, 235, 235, 0.589); 
+}
+
+.video-background{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+
+}
+
+@media (min-aspect-ratio: 16/9)
+{
+    .video-background{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio:16/9)
+{
+    .video-background{
+        width: auto;
+        height: 100%;
+        
+    }
+}
+
+.nav-bar{
+  background:rgba(87, 84, 84, 0.5); 
+  height: 80px;
+}
+
+.logo{
+    margin: 10px 100px;
+    height: 60px;
+}
+
+.menu{
+    float: right;
+    list-style: none;
+    margin: 20px;
+}
+
+.menu li{
+    display: inline-block;
+    margin: 10px 5px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: rgb(90, 92, 95);
+    padding: 5px 10px;
+    font-family: 'Poppins', sans-serif;
+    letter-spacing: 2px;   
+}
+
+.menu li a:hover{
+    background: rgb(10, 10, 10);
+    transition: .4s;
+    color: rgb(236, 13, 69);
+}
+
+.welcome{
+    position: relative;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    color: rgb(2, 1, 1);
+    top: 5px;
+    letter-spacing: 5px;
+}
+.welcome h1{
+    font-size: 32px;
+    margin: 25px;
+
+}
+/* Contact Page */
+
+
+
+.container { 
+    width: 80%;
+    margin: 50px auto;
+    font-family: 'Poppins', sans-serif; 
+   
+}
+
+.contact-box {
+    background: rgba(59, 59, 58, 0.835);
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+}
+
+.contact-left{
+    flex-basis: 60%;
+    padding: 40px 60px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.contact-right{
+    flex-basis: 40%;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+    background: white;
+    text-align: left;
+    color: rgb(3, 3, 3);
+    flex-direction: column;
+    
+}
+
+h2{
+    margin-bottom: 10px;
+}
+
+.container p{
+    margin-bottom: 40px;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.input-row .input-group {
+    flex-basis: 45%;
+}
+input{
+    width: 100%;
+    border: none;
+    border-bottom: 1px;
+    outline: none;
+    padding-bottom: 5px;
+}
+textarea{
+    width: 100%;
+    border: 1px solid #ccc;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+button{
+    background: red;
+    width: 100px;
+    border: none;
+    outline: none;
+    color: white;
+    height: 35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow: 0px 5px 15px 0px white;
+}
+
+tr td:first-child{
+    padding-right: 20px;   
+}
+
+tr td{
+padding-top: 20px;
+}
+
+/* Portfolio */
+h4{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    font-family: 'Poppins', sans-serif;
+}
+   
+    
+.gallery{
+    height: 1000px;
+    width: 1200px;
+    display: flex;
+    margin: 10% auto 0;
+    box-sizing: border-box;
+}
+
+.image-box{
+    margin: 0 1%;
+    flex-grow: 1;
+    flex-basis: 0;
+    transition: .5s;
+}
+
+.image-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .5s;
+}
+.image-box:hover{
+    flex-basis: 50%; 
+}
+.active{
+    flex-basis: 50%;   
+}
+.gallery:hover .active{
+    flex-basis: 0;
+}
+.image-box:nth-child(1):hover{
+    flex-basis: 50%;
+}
+.social-icons{
+    right: 72px;
+    bottom: 35px;
+    position: absolute;
+}
+.social-icons ul li{
+    list-style: none;
+    margin-top: 15px;
+    text-align: center;
+}
+.social-icons ul li a{
+    color: rgb(204, 16, 16);
+    border-radius: 50%;
+    border: 2px solid rgb(63, 60, 60); 
+    padding:5px;
+    display: block;
+}
+
+/* About */
+h5{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Services */
+h2{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
